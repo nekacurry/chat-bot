@@ -19,13 +19,13 @@ def get_game_bot_response(user_response):
 
 
 print("Welcome to Gamer Bot")
-print("I'll helo you pick out a game to play based on a genre!")
+print("I'll help you pick out a game to play based on a genre!")
 
 user_response = ""
 while True:
   user_response = input("What type of game do you want to play?: ")
 
-  if user_response == 'done':
+  if user_response == 'stop':
     break
 
   
