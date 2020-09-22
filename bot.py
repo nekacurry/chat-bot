@@ -19,6 +19,7 @@ def get_game_bot_response(user_response):
 
 
 print("Welcome to Gamer Bot")
+print("I'll helo you pick out a game to play based on a genre!")
 
 user_response = ""
 while True:
