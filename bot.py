@@ -1,4 +1,5 @@
 from random import choice
+#Allows us to use choice to randomize responses
 
 def get_game_bot_response(user_response):
   bot_response_story = ["Try What Remains of Edith Finch!", "Try Nier:Automata!", "I recommend Firewatch!", "Check out Last of Us!"]
@@ -8,12 +9,14 @@ def get_game_bot_response(user_response):
 
   if "story" in user_response:
     return choice(bot_response_story)
+#If the users response contains the string, it will return a response in that list at random
   elif "shooter" in user_response:
     return choice(bot_response_shooter)
   elif "top" in user_response:
     return choice(bot_response_top)
   else:
     return choice(bot_response_other)
+#When the user responds with a word the bot doesn't recognize, it chooses from a list of silly responses
 
 
 
@@ -27,7 +30,7 @@ while True:
 
   if user_response == 'stop':
     break
-
+#This is a loop. It calls on the function on line 4 continuously, until the user says "stop", then it will end.
   
   bot_response = get_game_bot_response(user_response)
   print(bot_response)
